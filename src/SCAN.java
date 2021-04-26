@@ -11,9 +11,9 @@ public class SCAN {
     {
         int temp=head;
 
-        if (direction == "left")
+        if (direction.equalsIgnoreCase("left") )
             left.add(0);
-        else if (direction == "right")
+        else if (direction.equalsIgnoreCase("right"))
             right.add(199);
 
         for (int i = 0; i < requests.size(); i++) {

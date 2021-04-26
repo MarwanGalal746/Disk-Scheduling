@@ -41,7 +41,8 @@ public class Main {
         }
         if(choice==3)
         {
-            System.out.print("Enter direction");
+            input.nextLine();
+            System.out.print("Enter direction: ");
             String direction = input.nextLine();
             SCAN scan = new SCAN();
             scan.execute(head,requests,direction);
