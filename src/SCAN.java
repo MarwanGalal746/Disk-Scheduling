@@ -41,6 +41,7 @@ public class SCAN {
                     total+=Math.abs(temp - right.get(i));
                     temp = right.get(i);
                 }
+                direction="left";
             }
             run--;
         }
