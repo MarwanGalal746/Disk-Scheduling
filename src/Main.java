@@ -53,7 +53,8 @@ public class Main {
         }
         if(choice==5)
         {
-
+            Look look = new Look();
+            look.seekTime(requests,head);
         }
         if(choice==6)
         {
