@@ -49,7 +49,8 @@ public class Main {
         }
         if(choice==4)
         {
-
+            CSCAN cscan = new CSCAN();
+            cscan.execute(head,requests);
         }
         if(choice==5)
         {
