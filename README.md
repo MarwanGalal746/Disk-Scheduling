@@ -17,7 +17,7 @@
 >
 > >4- **C-SCAN:**
 >
-> >5- **LOOK**:** It is advanced version of SCAN disk scheduling with a better seek time, it is like SCAN algorithm but it also looks ahead for more requests to be serviced in the same direction, if there are no pending requests in the the head then we reverse direction and start servicing requests in the opposite direction.
+> >5- **LOOK**: It is advanced version of SCAN disk scheduling with a better seek time, it is like SCAN algorithm but it also looks ahead for more requests to be serviced in the same direction, if there are no pending requests in the the head then we reverse direction and start servicing requests in the opposite direction.
 >
 > >6- **C-LOOK:**
 
