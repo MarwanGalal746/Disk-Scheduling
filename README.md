@@ -15,7 +15,7 @@
 >
 > > 3- **SCAN:** In SCAN disk scheduling algorithm, head starts from one end of the disk and moves towards the other end, servicing requests in between one by one and reach the other end. Then the direction of the head is reversed and the process continues as head continuously scan back and forth to access the disk.
 >
-> >4- **C-SCAN:**
+> >4- **C-SCAN:**Circular SCAN (C-SCAN) scheduling algorithm is a modified version of SCAN disk scheduling algorithm that deals with the inefficiency of SCAN algorithm by servicing the requests more uniformly.
 >
 > >5- **LOOK**: It is advanced version of SCAN disk scheduling with a better seek time, it is like SCAN algorithm but it also looks ahead for more requests to be serviced in the same direction, if there are no pending requests in the the head then we reverse direction and start servicing requests in the opposite direction.
 >
