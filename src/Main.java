@@ -59,7 +59,8 @@ public class Main {
         }
         if(choice==6)
         {
-
+            CLook cLook = new CLook();
+            cLook.seekTime(requests,head);
         }
     }
 }

@@ -8,6 +8,8 @@ public class CSCAN {
     //array to store right sectors
     ArrayList<Integer> right = new ArrayList<Integer>();
 
+    ArrayList<Integer> seekSequence = new ArrayList<Integer>();
+
     // total seek time
     int totalSeek = 0;
 
@@ -42,6 +44,7 @@ public class CSCAN {
             accessedPosition = right.get(i);
             seek = Math.abs(accessedPosition - head);
 
+            seekSequence.add(accessedPosition);
             // Increase the total seek
             totalSeek += seek;
 
@@ -58,12 +61,20 @@ public class CSCAN {
         for (int i = 0; i < left.size(); i++) {
             accessedPosition = left.get(i);
             seek = Math.abs(accessedPosition - head);
-
+            seekSequence.add(accessedPosition);
             // Increase the total seek
             totalSeek += seek;
 
             // make head = last Accessed track
             head = accessedPosition;
+        }
+
+        System.out.println("Seek Sequence is");
+
+        for (int i = 0; i < seekSequence.size(); i++) {
+
+            System.out.print(seekSequence.get(i));
+
         }
 
         System.out.print("TOTAL: ");
@@ -75,12 +86,6 @@ public class CSCAN {
 
 /*
 8
-176
-79
-34
-6092
-11
-41
-114
+176 79 34 60 92 11 41 114
 50
 */
