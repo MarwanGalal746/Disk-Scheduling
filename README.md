@@ -19,7 +19,7 @@
 >
 > >5- **LOOK**: It is advanced version of SCAN disk scheduling with a better seek time, it is like SCAN algorithm but it also looks ahead for more requests to be serviced in the same direction, if there are no pending requests in the the head then we reverse direction and start servicing requests in the opposite direction.
 >
-> >6- **C-LOOK:**
+> >6- **C-LOOK:** C-LOOK is an enhanced version of both SCAN as well as LOOK disk scheduling algorithms. This algorithm also uses the idea of wrapping the tracks as a circular cylinder as C-SCAN algorithm but the seek time is better than C-SCAN algorithm. We know that C-SCAN is used to avoid starvation and services all the requests more uniformly, the same goes for C-LOOK. 
 
 ## :dart: ​Clone the project
 
